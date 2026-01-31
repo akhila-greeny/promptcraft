@@ -1,16 +1,55 @@
-# React + Vite
+# PromptCraft – AI Prompt Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built an interactive frontend application that simulates how AI responses change based on prompt parameters such as temperature, creativity, formality, and role.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  - React
+  - Tailwind CSS
+  - Local Storage
+  - Java Script
+  - Vite
+ 
+## Key Features
 
-## React Compiler
+  - Designed a dynamic prompt interface with adjustable AI parameters (temperature, creativity, tone, role)
+  - Implemented simulated AI response generation logic based on user-controlled settings
+  - Developed save and history tracking using LocalStorage with reload, delete, and clear functionality
+  - Built reusable React components with clean state management and dashboard-style UI
+  - Styled the application using Tailwind CSS for a modern, responsive layout
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## What This Demonstrates
 
-## Expanding the ESLint configuration
+  -  Strong React component architecture and state handling
+  -  Product thinking and UI/UX design
+  -  Frontend simulation of AI behavior without backend APIs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Working
+
+  1. User enters a prompt in the input box.
+
+  2. User adjusts controls:
+       - Temperature (precision ↔ creativity)
+       - Creativity level
+       - Formality (Casual / Neutral / Formal)
+       - Role (Teacher / Developer / Poet / Friend)
+
+  3. When Generate Response is clicked:
+       - A mock AI engine (mockResponses.js) generates a response
+       - The response style changes based on selected parameters
+
+  4. Users can:
+       - Save prompts (stored in LocalStorage)
+       - View and reload previous prompts from History
+       - Delete individual history items or clear all
+
+  5. All data persists using the browser’s LocalStorage — no backend required.
+
+## How To Run
+
+git clone https://github.com/YOUR_USERNAME/promptcraft.git
+cd promptcraft
+npm install
+npm run dev
+
+
